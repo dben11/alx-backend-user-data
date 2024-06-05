@@ -21,10 +21,10 @@ def not_found(error) -> str:
     return jsonify({"error": "Not found"}), 404
 
 @pp.errorhandler(401)
-def unauthorised(error) -> str:
-    """ Unauthorised
+def unauthorized(error) -> str:
+    """ Unauthorized
     """
-    return jsonify({"error": "Unauthorized"}),401
+    return jsonify({"error": "Unauthorized"}), 401
 
 
 
