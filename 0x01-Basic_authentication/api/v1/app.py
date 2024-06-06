@@ -24,13 +24,6 @@ elif AUTH_TYPE == 'basic_auth':
     from api.v1.auth.basic_auth import BasicAuth
     auth = BasicAuth()
 
-# check the AUTH_TYPE if equal to basic_auth
-if AUTH_TYPE == 'basic_auth':
-    from api.v1.auth.basic_auth import BasicAuth
-    auth = BasicAuth()
-else:
-    auth = Auth()
-
 
 @app.before_request
 def before_request():
